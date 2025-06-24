@@ -8,9 +8,7 @@ function calculate() {
   const workCost = hours * rate;
   const totalCost = materials + workCost + rent + other;
 
-  let recommendedPrice = Math.round(totalCost * 1.4); // +40% наценка
-  let profit = recommendedPrice - totalCost;
-
+  let recommendedPrice = Math.round(totalCost * 1.3); // +30% профит
   document.getElementById("result").innerHTML = `
     <p>💸 Себестоимость: <strong>${totalCost.toFixed(0)} ₽</strong></p>
     <p>💰 Рекомендуемая цена: <strong>${recommendedPrice} ₽</strong></p>
